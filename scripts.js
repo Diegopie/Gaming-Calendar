@@ -8,3 +8,4 @@ bulmaCarousel.attach('#slider', {
     navigation: true,
 });
 
+
