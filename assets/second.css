@@ -1,0 +1,59 @@
+/* game title, position for img */
+.game-title{
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: -50px;
+
+    background-color: black;
+}
+
+.game-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table-info {
+    display: flex;
+    justify-content: center;
+}
+
+/* buttons */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 30px;
+}
+
+.clear-button {
+    margin-left: 70px;
+    padding: 10px 50px 10px;
+}
+
+.next-button {
+    margin-right: 70px;
+    padding: 10px 50px 10px;
+
+}
+
+.create-btn {
+    display: flex;
+    justify-content: center;
+
+    padding-top: 15px;
+}
+
+.create-button {
+    padding: 10px 50px 10px;
+}
+
+.event-btn {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.hide {
+    display: none;
+}
