@@ -1,4 +1,3 @@
-// JS Code for Carousel
 bulmaCarousel.attach('#slider', {
     slidesToScroll: 1,
     slidesToShow: 1,
@@ -8,3 +7,4 @@ bulmaCarousel.attach('#slider', {
     navigationKeys: true,
     navigation: true,
 });
+
