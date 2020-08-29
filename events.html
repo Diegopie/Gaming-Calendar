@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Bulma!</title>
+    <title>Event</title>
     <!-- bulma -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
 
@@ -12,7 +12,14 @@
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 
     <!-- css file -->
-    <link rel="stylesheet" href="../assets/second.css">
+    <link rel="stylesheet" href="assets\second.css">
+
+    <!-- calendar css -->
+    <link rel="stylesheet" href="calendar\css\evo-calendar.css" />
+    <!-- optional css -->
+    <link rel="stylesheet" href="calendar\css\evo-calendar.midnight-blue.css" />
+    <link rel="stylesheet" href="calendar\css\evo-calendar.orange-coral.css" />
+    <link rel="stylesheet" href="calendar\css\evo-calendar.royal-navy.css" />
 </head>
 
 <body>
@@ -33,10 +40,10 @@
             <div class="column is-half">
                 <div class="field">
                     <div class="control">
-                      <input class="input black" type="text" placeholder="Danger input">
+                        <input class="input black" type="text" placeholder="Danger input">
                     </div>
-                  </div>
-                
+                </div>
+
             </div>
             <!-- search icon -->
             <div class="columns padding-search">
@@ -61,7 +68,7 @@
         <!-- img -->
         <section class="section game-img">
             <figure class="image">
-                <img src="../assets/img/trapper.jpg">
+                <img src="assets\img\trapper.jpg">
             </figure>
         </section>
     </div>
@@ -103,9 +110,8 @@
 
         <div class="column">
             <div class="columns is-centered">
-                <!-- some calendar -->
-                <img src="../assets/img/February-2021-Calendar.jpg" alt="">
-                <!-- place for calendar -->
+                <!-- calendar -->
+                <div id="evoCalendar"></div>
             </div>
         </div>
     </section>
@@ -168,8 +174,9 @@
                         <div class="content">
                             <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Phasellus nec iaculis mauris. <a>@bulmaio</a>. -->
-                                <!-- some QR -->
-                            <img src="../assets/img/apps.33967.13510798887182917.246b0a3d-c3cc-46fc-9cea-021069d15c09.png" alt="">
+                            <!-- some QR -->
+                            <img src="assets\img\apps.33967.13510798887182917.246b0a3d-c3cc-46fc-9cea-021069d15c09.png"
+                                alt="">
 
                             <!-- <a href="#">#css</a> <a href="#">#responsive</a>
                             <br>
@@ -199,6 +206,17 @@
             </p>
         </div>
     </footer>
+
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh"
+        crossorigin="anonymous"></script>
+
+    <script src="calendar\js\evo-calendar.js"></script>
+
+    <script>
+        $('#evoCalendar').evoCalendar();
+    </script>
 </body>
 
 </html>
