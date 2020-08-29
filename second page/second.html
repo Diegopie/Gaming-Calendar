@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <!-- bulma -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+
+    <!-- font-awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+    <!-- css file -->
+    <link rel="stylesheet" href="../assets/second.css">
+</head>
+
+<body>
+    <!-- header -->
+    <section class="hero is-primary">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title">
+                    Hero title
+                </h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- search input -->
+    <section class="section has-text-centered">
+        <div class="columns">
+            <div class="column">
+                <input id="user-search" style="width:30em;" class="input" name="search-input" type="text"
+                    placeholder="something">
+                <!-- search icon -->
+                <a id="" class="button is-info">
+                    <i class="fas fa-search"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- game img/game title -->
+    <div class="game">
+        <section class="section has-text-centered">
+            <div class="columns is-mobile is-centered">
+                <!-- id's somewhere here -->
+                <div class="column is-half">
+                    <h4 class="title is-4 game-title">Some title</h4>
+                </div>
+    
+            </div>
+        </section>
+        <!-- img -->
+        <section class="section game-img">
+            <figure class="image">
+                <img src="https://via.placeholder.com/720x500">
+            </figure>
+        </section>
+    </div>
+
+    <!-- section with table -->
+    <section class="section has-text-centered table-info">
+        <div class="columns">
+            <div class="column">
+                <table class="table is-bordered" style="width:40em;">
+                    <thead>
+                        <tr>
+                            <th>Rating</th>
+                            <th>Description</th>
+                            <th>Genre</th>
+                            <th>Store</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td id="rating">aaaaaa</td>
+                            <td id="description">aaaaa</td>
+                            <td id="genre">aaaaa</td>
+                            <td id="store">aaaa</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                <!-- buttons -->
+                <div class="buttons">
+                    <button id="" class="button clear-button">Clear</button>
+                    <button id="" class="button next-button">Next</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section has-text-centered">
+        CAlEnDAr
+        <!-- place for calendar -->
+    </section>
+
+    <!-- form section -->
+    <section class="section">
+        <div class="columns has-text-centered is-centered">
+            <div class="column is-half">
+                <div class="field">
+                    <label class="label is-medium">Medium input</label>
+                    <div class="control has-icons-left has-icons-right">
+                      <input class="input is-medium" type="email" placeholder="Extra small">
+                      <span class="icon is-small is-left">
+                        <i class="fas fa-envelope fa-xs"></i>
+                      </span>
+                      <span class="icon is-small is-right">
+                        <i class="fas fa-check fa-xs"></i>
+                      </span>
+                    </div>
+                  </div>
+                  
+                  <div class="field">
+                    <div class="control has-icons-left has-icons-right">
+                      <input class="input is-medium" type="email" placeholder="Small">
+                      <span class="icon is-left">
+                        <i class="fas fa-envelope fa-sm"></i>
+                      </span>
+                      <span class="icon is-right">
+                        <i class="fas fa-check fa-sm"></i>
+                      </span>
+                    </div>
+                  </div>
+                  
+                  <div class="field">
+                    <div class="control has-icons-left has-icons-right">
+                      <input class="input is-medium" type="email" placeholder="Normal">
+                      <span class="icon is-medium is-left">
+                        <i class="fas fa-envelope"></i>
+                      </span>
+                      <span class="icon is-medium is-right">
+                        <i class="fas fa-check"></i>
+                      </span>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <!-- create button -->
+        <div class="create-btn">
+            <button id="" class="button create-button">Create</button>
+        </div>
+    </section>
+
+    <!-- event info -->
+    <section class="section">
+        <div class="column">
+            <div class="columns is-centered">
+                <div class="card">
+                    <div class="card-content">
+                  
+                      <div class="content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+
+                        <a href="#">#css</a> <a href="#">#responsive</a>
+                        <br>
+
+                        <time datetime="">11:09 PM - 1 Jan 2016</time>
+                      </div>
+
+                    </div>
+                    <footer class="card-footer">
+                        <a href="#" class="card-footer-item">Copy</a>
+                      </footer>
+                  </div>
+            </div>
+        </div>
+        <!-- event button -->
+        <div class="event-btn">
+            <button id="" class="button event-button">New Event</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+          <p>
+            <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+            <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+            is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+          </p>
+        </div>
+      </footer>
+</body>
+
+</html>
