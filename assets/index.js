@@ -40,25 +40,27 @@
             renderGame()
         })
     }
+
     function renderGame() {
         let title = $('<h2>').text(gameData.title).addClass("whatever")
         let img = $('<img>').attr('src', gameData.image).addClass("whatever")
         let ul = $('<ul>').addClass('gamelist')
+        let platString = ""
+        
+        
 
-        $('#usethis').append(title, img, ul)
-
-        let platforms = {}; 
+        
         console.log(gameData.platforms.length);
         for (i = 0; i < gameData.platforms.length; i++) {
             console.log(gameData.platforms[i].platform.name);
-            let newPlat = $('<ul>')
-            let platString = ""
+            let newPlat = $('<ul>')            
             // Im trying to get all platforms displayed on one stringm, so tht string is diaplayed to the DOM
-            platString += gameData.platforms[i].platform.name
+            platString += gameData.platforms[i].platform.name + ", ";
             console.log(platString);
             newPlat.text(platString)
 
-
+        var platforms = ($('<p>')).text(platString).addClass('whatever')
         console.dir(gameData);
         }
+        $('#usethis').append(title, img, platforms)
     }
