@@ -1,14 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
 // * Global Variables
     // This will be given a value in the Game Container, then used in the Form Container
     let selectedGame;
