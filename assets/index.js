@@ -2,7 +2,7 @@
     // This will be given a value in the Game Container, then used in the Form Container
     let selectedGame;
 
-
+    // Store infomation from AJAX request
     let gameData = {
         title: "",
         image: "",
@@ -12,55 +12,32 @@
         released: "",
     }
 
-
+    // Grab value of user input and run rawgReq(); 
     $('#user-search').click(function(){
         selectedGame = $('#user-text').val().trim();
-        console.log(selectedGame);
-        rawgReq(selectedGame)
+                // console.log(selectedGame);
+        rawgReq(selectedGame);
     });
 
 
-
-    function rawgReq(game) {
-        let url = 'https://api.rawg.io/api/games?search=' + selectedGame
-        console.log(url);
+    // Create ajax request to RAWG API
+    function rawgReq() {
+        let url = 'https://api.rawg.io/api/games?search=' + selectedGame;
+                // console.log(url);
 
         $.ajax({
             url: url,
             method: "GET"
         }) .then (function current(activeGame) {
                 // console.log(activeGame); this returns all games with selectedGame in their title
-                console.log(activeGame.results);
-            let gameInfo = activeGame.results[0]
+                // console.log(activeGame.results);
+            let gameInfo = activeGame.results[0];
             gameData.title = gameInfo.name;
             gameData.image = gameInfo.background_image;
-            gameData.platforms = gameInfo.platforms
-            gameData.store = gameInfo.stores
-                        // To display, we'll need to loop through the length of the platform array
-            renderGame()
-        })
-    }
-
-    function renderGame() {
-        let title = $('<h2>').text(gameData.title).addClass("whatever")
-        let img = $('<img>').attr('src', gameData.image).addClass("whatever")
-        let ul = $('<ul>').addClass('gamelist')
-        let platString = ""
-        
-        
-
-        
-        console.log(gameData.platforms.length);
-        for (i = 0; i < gameData.platforms.length; i++) {
-            console.log(gameData.platforms[i].platform.name);
-            let newPlat = $('<ul>')            
-            // Im trying to get all platforms displayed on one stringm, so tht string is diaplayed to the DOM
-            platString += gameData.platforms[i].platform.name + ", ";
-            console.log(platString);
-            newPlat.text(platString)
-
-        var platforms = ($('<p>')).text(platString).addClass('whatever')
-        console.dir(gameData);
-        }
-        $('#usethis').append(title, img, platforms)
+            gameData.platforms = gameInfo.platforms;
+            gameData.store = gameInfo.stores;
+            
+            // This function will be used once we add logic for updating the DOM
+            // renderGame()
+        });
     }
