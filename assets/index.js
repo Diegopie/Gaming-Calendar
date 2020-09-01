@@ -12,13 +12,23 @@
         released: "",
     }
 
-    // Grab value of user input and run rawgReq(); 
+// * JS Code for Carousel
+    bulmaCarousel.attach('#slider', {
+        slidesToScroll: 1,
+        slidesToShow: 1,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 2500,
+        navigationKeys: true,
+        navigation: true,
+    });
+
+// * Grab value of user input and run rawgReq(); 
     $('#user-search').click(function(){
         selectedGame = $('#user-text').val().trim();
                 // console.log(selectedGame);
         rawgReq(selectedGame);
     });
-
 
     // Create ajax request to RAWG API
     function rawgReq() {
@@ -36,6 +46,7 @@
             gameData.image = gameInfo.background_image;
             gameData.platforms = gameInfo.platforms;
             gameData.store = gameInfo.stores;
+            console.log(gameData);
             
             // This function will be used once we add logic for updating the DOM
             // renderGame()
