@@ -25,6 +25,7 @@
 
 // * Grab value of user input and run rawgReq(); 
     $('#user-search').click(function(){
+        event.preventDefault()
         selectedGame = $('#user-text').val().trim();
                 // console.log(selectedGame);
         rawgReq(selectedGame);
@@ -39,6 +40,7 @@
             url: url,
             method: "GET"
         }) .then (function current(activeGame) {
+            console.log(url)
                 // console.log(activeGame); this returns all games with selectedGame in their title
                 // console.log(activeGame.results);
             let gameInfo = activeGame.results[0];
