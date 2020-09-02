@@ -1,4 +1,7 @@
-
+.centered-img {
+    display: flex;
+    justify-content: center;
+}
 /* stylying for search button */
 .padding-search {
     padding-top: 22px;

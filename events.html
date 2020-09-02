@@ -56,10 +56,9 @@
 
         <!-- game img/game title -->
         <!-- HIDE ME -->
-    <section id="game-contain" class="hide"> 
+    <section id="game-contain" class=""> 
         <article class="section has-text-centered">
             <div class="columns is-mobile is-centered">
-                <!-- id's somewhere here -->
                 <div id="game-titl" class="column is-half">
                     
                 </div>
@@ -67,11 +66,12 @@
             </div>
         </article>
         <!-- img -->
-        <article class="section">
-            <figure id="game-img" class="image">
-                
+        <article class="media centered-img">
+            <figure id="game-img" class="image ml-5 mr-5">
+                <img src="assets/image/1249525.jpg" alt="" style="width: 850px;"> 
             </figure>
         </article>
+        
         
 
         <!-- section with table -->
@@ -110,7 +110,7 @@
 
     <!-- Calendar & Form -->
     <!-- HIDE ME -->
-    <section id="cal-contain" class="section has-text-centered hide">
+    <section id="cal-contain" class="section has-text-centered">
         <article class="column">
             <div class="columns is-centered">
                 <!-- calendar -->
@@ -137,23 +137,39 @@
                     <div class="field">
                         <div class="control has-icons-left has-icons-right">
                             <input id="game-desc" class="input is-medium" type="text" placeholder="Small">
-                            
                             <span class="icon is-right">
                                 <i class="fas fa-check fa-sm"></i>
                             </span>
                         </div>
                     </div>
-
+                   <!-- date select -->
                     <div class="field">
                         <div class="control has-icons-left has-icons-right">
                             <input id="game-date" class="input is-medium" type="date" placeholder="Normal">
-                            
                             <span class="icon is-medium is-right">
                                 <i class="fas fa-check"></i>
                             </span>
                         </div>
+                        </div>
+                        <!-- time select -->
+                        <div class="field">
+                            <div class="control has-icons-left is-pulled-left">
+                              <div class="select is-success">
+                                <select>
+                                  <option selected>Select Time</option>
+                                  <option>12 AM</option>
+                                  <option>1 PM</option>
+                                </select>
+                              </div>
+                              <div class="icon is-left">
+                                <i class="far fa-clock"></i>
+                              </div>
+                            </div>
+                          </div>
                     </div>
-                </div>
+                    
+                    
+            
             </div>
             <!-- create button -->
             <div class="create-btn">
