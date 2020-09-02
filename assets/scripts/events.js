@@ -16,6 +16,7 @@
     $('#user-search').click(function(){
         event.preventDefault()
         selectedGame = $('#user-text').val().trim();
+        $('#game-contain').removeClass('hide')
                 // console.log(selectedGame);
         rawgReq(selectedGame);
     });

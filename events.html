@@ -32,28 +32,29 @@
     </section>
 
     <!-- search input -->
-    <section class="section">
-        <div class="columns is-centered">
-            <div class="column is-half">
-                <div class="field">
-                    <div class="control">
-                        <input id="user-text" class="input black" type="search" placeholder="Search Your Game">
+    
+        <article class="section">
+            <div class="columns is-centered">
+                <div class="column is-half">
+                    <div class="field">
+                        <div class="control">
+                            <input id="user-text" class="input black" type="search" placeholder="Search Your Game">
+                        </div>
                     </div>
+
                 </div>
-
+                <!-- search icon -->
+                <div id="user-search" class="columns padding-search">
+                    <a class="button button-search">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </div>
             </div>
-            <!-- search icon -->
-            <div id="user-search" class="columns padding-search">
-                <a class="button button-search">
-                    <i class="fas fa-search"></i>
-                </a>
-            </div>
-        </div>
-    </section>
+        </article>
 
-    <!-- game img/game title -->
-    <div class="game">
-        <section class="section has-text-centered">
+        <!-- game img/game title -->
+    <section id="game-contain" class="hide"> 
+        <article class="section has-text-centered">
             <div class="columns is-mobile is-centered">
                 <!-- id's somewhere here -->
                 <div id="game-titl" class="column is-half">
@@ -61,48 +62,48 @@
                 </div>
 
             </div>
-        </section>
+        </article>
         <!-- img -->
-        <section class="section">
+        <article class="section">
             <figure id="game-img" class="image">
                 
             </figure>
-        </section>
-    </div>
+        </article>
+        
 
-    <!-- section with table -->
-    <section class="section has-text-centered table-info">
-        <div class="columns">
-            <div class="column">
-                <table class="table is-bordered" style="width:40em;">
-                    <thead>
-                        <tr>
-                            <th>Platforms</th>
-                            <th>Available On</th>
-                            <th>Genre</th>
-                            <th>Released</th>
-                        </tr>
-                    </thead>
+        <!-- section with table -->
+        <article class="section has-text-centered table-info">
+            <div class="columns">
+                <div class="column">
+                    <table class="table is-bordered" style="width:40em;">
+                        <thead>
+                            <tr>
+                                <th>Platforms</th>
+                                <th>Available On</th>
+                                <th>Genre</th>
+                                <th>Released</th>
+                            </tr>
+                        </thead>
 
-                    <tbody>
-                        <tr>
-                            <td id="platforms"></td>
-                            <td id="store"></td>
-                            <td id="genres"></td>
-                            <td id="date"></td>
-                        </tr>
+                        <tbody>
+                            <tr>
+                                <td id="platforms"></td>
+                                <td id="store"></td>
+                                <td id="genres"></td>
+                                <td id="date"></td>
+                            </tr>
 
-                    </tbody>
-                </table>
-                <!-- buttons -->
-                <div class="buttons">
-                    <button id="" class="button clear-button">Clear</button>
-                    <button id="" class="button next-button">Next</button>
+                        </tbody>
+                    </table>
+                    <!-- buttons -->
+                    <div class="buttons">
+                        <button id="" class="button clear-button">Clear</button>
+                        <button id="" class="button next-button">Next</button>
+                    </div>
                 </div>
             </div>
-        </div>
+        </article>
     </section>
-
     <section class="section has-text-centered">
 
         <div class="column">
