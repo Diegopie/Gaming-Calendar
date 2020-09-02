@@ -12,17 +12,6 @@
         released: "",
     }
 
-// * JS Code for Carousel
-    bulmaCarousel.attach('#slider', {
-        slidesToScroll: 1,
-        slidesToShow: 1,
-        infinite: true,
-        autoplay: true,
-        autoplaySpeed: 2500,
-        navigationKeys: true,
-        navigation: true,
-    });
-
 // * Grab value of user input and run rawgReq(); 
     $('#user-search').click(function(){
         event.preventDefault()
@@ -41,7 +30,7 @@
             method: "GET"
         }) .then (function current(activeGame) {
             console.log(url)
-                // console.log(activeGame); this returns all games with selectedGame in their title
+                console.log(activeGame); //this returns all games with selectedGame in their title
                 // console.log(activeGame.results);
             let gameInfo = activeGame.results[0];
             gameData.title = gameInfo.name;
