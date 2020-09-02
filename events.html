@@ -33,6 +33,7 @@
 
     <!-- search input -->
     
+    <section id="game-search">
         <article class="section">
             <div class="columns is-centered">
                 <div class="column is-half">
@@ -51,8 +52,10 @@
                 </div>
             </div>
         </article>
+    </section>
 
         <!-- game img/game title -->
+        <!-- HIDE ME -->
     <section id="game-contain" class="hide"> 
         <article class="section has-text-centered">
             <div class="columns is-mobile is-centered">
@@ -97,69 +100,72 @@
                     </table>
                     <!-- buttons -->
                     <div class="buttons">
-                        <button id="" class="button clear-button">Clear</button>
-                        <button id="" class="button next-button">Next</button>
+                        <button class="button clear-button">Clear</button>
+                        <button class="button next-button">Next</button>
                     </div>
                 </div>
             </div>
         </article>
     </section>
-    <section class="section has-text-centered">
 
-        <div class="column">
+    <!-- Calendar & Form -->
+    <!-- HIDE ME -->
+    <section id="cal-contain" class="section has-text-centered hide">
+        <article class="column">
             <div class="columns is-centered">
                 <!-- calendar -->
                 <div id="evoCalendar"></div>
             </div>
-        </div>
-    </section>
+        </article>
+    
 
     <!-- form section -->
-    <section class="section">
-        <div class="columns has-text-centered is-centered">
-            <div class="column is-half">
-                <div class="field">
-                    <label class="label is-medium">Medium input</label>
-                    <div class="control has-icons-left has-icons-right">
-                        <input class="input is-medium" type="email" placeholder="Extra small">
-                        <span class="icon is-small is-left">
-                            <i class="fas fa-envelope fa-xs"></i>
-                        </span>
-                        <span class="icon is-small is-right">
-                            <i class="fas fa-check fa-xs"></i>
-                        </span>
+        <article class="section">
+            <div class="columns has-text-centered is-centered">
+                <div class="column is-half">
+                    <div class="field">
+                        <label class="label is-medium">Medium input</label>
+                        <div class="control has-icons-left has-icons-right">
+                            <input id="game-title" class="input is-medium" type="text" placeholder="Extra small">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-envelope fa-xs"></i>
+                            </span>
+                            <span class="icon is-small is-right">
+                                <i class="fas fa-check fa-xs"></i>
+                            </span>
+                        </div>
                     </div>
-                </div>
 
-                <div class="field">
-                    <div class="control has-icons-left has-icons-right">
-                        <input class="input is-medium" type="email" placeholder="Small">
-                        <span class="icon is-left">
-                            <i class="fas fa-envelope fa-sm"></i>
-                        </span>
-                        <span class="icon is-right">
-                            <i class="fas fa-check fa-sm"></i>
-                        </span>
+                    <div class="field">
+                        <div class="control has-icons-left has-icons-right">
+                            <input id="game-desc" class="input is-medium" type="text" placeholder="Small">
+                            <span class="icon is-left">
+                                <i class="fas fa-envelope fa-sm"></i>
+                            </span>
+                            <span class="icon is-right">
+                                <i class="fas fa-check fa-sm"></i>
+                            </span>
+                        </div>
                     </div>
-                </div>
 
-                <div class="field">
-                    <div class="control has-icons-left has-icons-right">
-                        <input class="input is-medium" type="email" placeholder="Normal">
-                        <span class="icon is-medium is-left">
-                            <i class="fas fa-envelope"></i>
-                        </span>
-                        <span class="icon is-medium is-right">
-                            <i class="fas fa-check"></i>
-                        </span>
+                    <div class="field">
+                        <div class="control has-icons-left has-icons-right">
+                            <input id="game-date" class="input is-medium" type="date" placeholder="Normal">
+                            <span class="icon is-medium is-left">
+                                <i class="fas fa-envelope"></i>
+                            </span>
+                            <span class="icon is-medium is-right">
+                                <i class="fas fa-check"></i>
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- create button -->
-        <div class="create-btn">
-            <button id="" class="button create-button">Create</button>
-        </div>
+            <!-- create button -->
+            <div class="create-btn">
+                <button class="button create-button">Create</button>
+            </div>
+        </article>
     </section>
 
     <!-- event info -->

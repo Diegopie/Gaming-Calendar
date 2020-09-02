@@ -16,9 +16,9 @@
     $('#user-search').click(function(){
         event.preventDefault()
         selectedGame = $('#user-text').val().trim();
-        $('#game-contain').removeClass('hide')
+        
                 // console.log(selectedGame);
-        rawgReq(selectedGame);
+        rawgReq(selectedGame);        
     });
 
     // Create ajax request to RAWG API
@@ -78,9 +78,7 @@
              console.log(genresString);
          }
 
-
         
-        // $('#usethis').append(title, img, platforms)
         $('#game-titl').append(title)
         $('#game-img').append(img)
         $('#platforms').text(platString)
@@ -88,5 +86,25 @@
         $('#genres').text(genresString)
         $('#date').text(gameData.released)
 
+        $('#game-contain').removeClass('hide')
+
+        $('#game-search').addClass('hide')
 
     }
+
+
+
+    $('.clear-button').click(function(){
+        location.reload();
+    })
+
+    $('.next-button').click(function(){
+        $('#game-contain').addClass('hide')
+        $('#cal-contain').removeClass('hide')
+        console.dir($('#game-title'));
+        $('#game-title').val(gameData.title)
+    })
+
+    $('.create-btn').click(function(){
+
+    })
