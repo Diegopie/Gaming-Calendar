@@ -32,133 +32,140 @@
     </section>
 
     <!-- search input -->
-    <section class="section">
-        <div class="columns is-centered">
-            <div class="column is-half">
-                <div class="field">
-                    <div class="control">
-                        <input id="user-text" class="input black" type="search" placeholder="Search Your Game">
+    
+    <section id="game-search">
+        <article class="section">
+            <div class="columns is-centered">
+                <div class="column is-half">
+                    <div class="field">
+                        <div class="control">
+                            <input id="user-text" class="input black" type="search" placeholder="Search Your Game">
+                        </div>
                     </div>
-                </div>
 
+                </div>
+                <!-- search icon -->
+                <div id="user-search" class="columns padding-search">
+                    <a class="button button-search">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </div>
             </div>
-            <!-- search icon -->
-            <div id="user-search" class="columns padding-search">
-                <a class="button button-search">
-                    <i class="fas fa-search"></i>
-                </a>
-            </div>
-        </div>
+        </article>
     </section>
 
-    <!-- game img/game title -->
-    <div class="game">
-        <section class="section has-text-centered">
+        <!-- game img/game title -->
+        <!-- HIDE ME -->
+    <section id="game-contain" class="hide"> 
+        <article class="section has-text-centered">
             <div class="columns is-mobile is-centered">
                 <!-- id's somewhere here -->
-                <div class="column is-half">
-                    <h4 class="title is-4 game-title">Dead by Daylight</h4>
+                <div id="game-titl" class="column is-half">
+                    
                 </div>
 
             </div>
-        </section>
+        </article>
         <!-- img -->
-        <section class="section game-img">
-            <figure class="image">
-                <img src="assets\image\trapper.jpg">
+        <article class="section">
+            <figure id="game-img" class="image">
+                
             </figure>
-        </section>
-    </div>
+        </article>
+        
 
-    <!-- section with table -->
-    <section class="section has-text-centered table-info">
-        <div class="columns">
-            <div class="column">
-                <table class="table is-bordered" style="width:40em;">
-                    <thead>
-                        <tr>
-                            <th>Rating</th>
-                            <th>Description</th>
-                            <th>Genre</th>
-                            <th>Store</th>
-                        </tr>
-                    </thead>
+        <!-- section with table -->
+        <article class="section has-text-centered table-info">
+            <div class="columns">
+                <div class="column">
+                    <table class="table is-bordered" style="width:40em;">
+                        <thead>
+                            <tr>
+                                <th>Platforms</th>
+                                <th>Available On</th>
+                                <th>Genre</th>
+                                <th>Released</th>
+                            </tr>
+                        </thead>
 
-                    <tbody>
-                        <tr>
-                            <td id="rating">aaaaaa</td>
-                            <td id="description">aaaaa</td>
-                            <td id="genre">aaaaa</td>
-                            <td id="store">aaaa</td>
-                        </tr>
+                        <tbody>
+                            <tr>
+                                <td id="platforms"></td>
+                                <td id="store"></td>
+                                <td id="genres"></td>
+                                <td id="date"></td>
+                            </tr>
 
-                    </tbody>
-                </table>
-                <!-- buttons -->
-                <div class="buttons">
-                    <button id="" class="button clear-button">Clear</button>
-                    <button id="" class="button next-button">Next</button>
+                        </tbody>
+                    </table>
+                    <!-- buttons -->
+                    <div class="buttons">
+                        <button class="button clear-button">Clear</button>
+                        <button class="button next-button">Next</button>
+                    </div>
                 </div>
             </div>
-        </div>
+        </article>
     </section>
 
-    <section class="section has-text-centered">
-
-        <div class="column">
+    <!-- Calendar & Form -->
+    <!-- HIDE ME -->
+    <section id="cal-contain" class="section has-text-centered hide">
+        <article class="column">
             <div class="columns is-centered">
                 <!-- calendar -->
                 <div id="evoCalendar"></div>
             </div>
-        </div>
-    </section>
+        </article>
+    
 
     <!-- form section -->
-    <section class="section">
-        <div class="columns has-text-centered is-centered">
-            <div class="column is-half">
-                <div class="field">
-                    <label class="label is-medium">Medium input</label>
-                    <div class="control has-icons-left has-icons-right">
-                        <input class="input is-medium" type="email" placeholder="Extra small">
-                        <span class="icon is-small is-left">
-                            <i class="fas fa-envelope fa-xs"></i>
-                        </span>
-                        <span class="icon is-small is-right">
-                            <i class="fas fa-check fa-xs"></i>
-                        </span>
+        <article class="section">
+            <div class="columns has-text-centered is-centered">
+                <div class="column is-half">
+                    <div class="field">
+                        <label class="label is-medium">Medium input</label>
+                        <div class="control has-icons-left has-icons-right">
+                            <input id="game-title" class="input is-medium" type="text" placeholder="Extra small">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-envelope fa-xs"></i>
+                            </span>
+                            <span class="icon is-small is-right">
+                                <i class="fas fa-check fa-xs"></i>
+                            </span>
+                        </div>
                     </div>
-                </div>
 
-                <div class="field">
-                    <div class="control has-icons-left has-icons-right">
-                        <input class="input is-medium" type="email" placeholder="Small">
-                        <span class="icon is-left">
-                            <i class="fas fa-envelope fa-sm"></i>
-                        </span>
-                        <span class="icon is-right">
-                            <i class="fas fa-check fa-sm"></i>
-                        </span>
+                    <div class="field">
+                        <div class="control has-icons-left has-icons-right">
+                            <input id="game-desc" class="input is-medium" type="text" placeholder="Small">
+                            <span class="icon is-left">
+                                <i class="fas fa-envelope fa-sm"></i>
+                            </span>
+                            <span class="icon is-right">
+                                <i class="fas fa-check fa-sm"></i>
+                            </span>
+                        </div>
                     </div>
-                </div>
 
-                <div class="field">
-                    <div class="control has-icons-left has-icons-right">
-                        <input class="input is-medium" type="email" placeholder="Normal">
-                        <span class="icon is-medium is-left">
-                            <i class="fas fa-envelope"></i>
-                        </span>
-                        <span class="icon is-medium is-right">
-                            <i class="fas fa-check"></i>
-                        </span>
+                    <div class="field">
+                        <div class="control has-icons-left has-icons-right">
+                            <input id="game-date" class="input is-medium" type="date" placeholder="Normal">
+                            <span class="icon is-medium is-left">
+                                <i class="fas fa-envelope"></i>
+                            </span>
+                            <span class="icon is-medium is-right">
+                                <i class="fas fa-check"></i>
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- create button -->
-        <div class="create-btn">
-            <button id="" class="button create-button">Create</button>
-        </div>
+            <!-- create button -->
+            <div class="create-btn">
+                <button class="button create-button">Create</button>
+            </div>
+        </article>
     </section>
 
     <!-- event info -->
