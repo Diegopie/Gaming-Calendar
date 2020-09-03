@@ -83,6 +83,10 @@
     padding-top: 40px;
 }
 
+.minutes-input {
+    padding: 8px;
+}
+
 .hide {
     display: none;
 }
