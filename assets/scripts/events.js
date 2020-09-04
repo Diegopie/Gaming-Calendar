@@ -119,7 +119,9 @@
 
         let min = $('.minutes-input').val()
                 console.log(min);
-            
+            if (min < 10) {
+                min = 0 + min;
+            }
         let period = $('#period').val()
                 console.log(period);
             if (period === "AM") {
@@ -139,11 +141,13 @@
 
         let qrickURL = "https://qrickit.com/api/qr.php?d=BEGIN%3AVEVENT%0D%0ASUMMARY%3A" + subject+ "%0D%0ADESCRIPTION%3A"+desc+"%0D%0ADTSTART%3A"+date+"%0D%0AEND%3AVEVENT%0D%0A&t=g&addtext=&txtcolor=000000& fgdcolor=000000&bgdcolor=FFFFFF&qrsize=200";
 
-        console.log(qrickURL);
+                console.log(qrickURL);
 
-        let qrDiv = $("<div class='qr'>");
+        let qrDiv = $("<div class='qr card'>");
+        let cardCont = $("<div class='card-content>")
         let qrP = $("<p>").text("Here is your invite code:");
-        qrDiv.append(qrP);
+        qrDiv.append(cardCont);
+        cardCont.append(qrP);
         let qrH2 = $("<h2>").text(subject);
         qrDiv.append(qrH2);
         let qrH3 = $("<h3>").text(qrDate);
