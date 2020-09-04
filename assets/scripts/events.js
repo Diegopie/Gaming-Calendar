@@ -86,7 +86,12 @@
 
     // Display Message if User Inputs are Not Valid
     function calMessage(message) {
-        $('#msg').text(message)
+        $('#cal-msg').text(message)
+    }
+
+     // Display Message if User Inputs are Not Valid
+     function searMessage(message) {
+        $('#sear-msg').text(message)
     }
 
     // Render QR Code
@@ -115,6 +120,10 @@
     $('#user-search').click(function(){
         event.preventDefault()
         selectedGame = $('#user-text').val().trim();
+            if (selectedGame === "") {
+                searMessage("Search field cannot be empty");
+                return;
+            }
         
                 // console.log(selectedGame);
         rawgReq(selectedGame);        
