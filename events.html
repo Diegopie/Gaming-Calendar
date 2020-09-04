@@ -106,10 +106,10 @@
             <div class="columns has-text-centered is-centered">
                 <div class="column is-half">
                     <div class="field">
-                        <label class="label is-medium">Medium input</label>
+                        <label class="label is-medium">Add the Details of Your Event</label>
                         <div class="control has-icons-left has-icons-right">
-                            <input id="game-title" class="input is-medium" type="text" placeholder="Extra small">
-
+                            <input id="game-title" class="input is-medium" type="text" placeholder="Name of Event">
+                            
                             <span class="icon is-small is-right">
                                 <i class="fas fa-check fa-xs"></i>
                             </span>
@@ -118,7 +118,7 @@
 
                     <div class="field">
                         <div class="control has-icons-left has-icons-right">
-                            <input id="game-desc" class="input is-medium" type="text" placeholder="Small">
+                            <input id="game-desc" class="input is-medium" type="text" placeholder="Description of your event">
                             <span class="icon is-right">
                                 <i class="fas fa-check fa-sm"></i>
                             </span>
@@ -134,24 +134,24 @@
                         </div>
                     </div>
 
-                    <!-- Hours -->
-                    <div class="field">
-                        <div class="control has-icons-left">
-                            <div class="select is-success">
-                                <select>
-                                    <option selected>Hour</option>
-                                    <option>01</option>
-                                    <option>02</option>
-                                    <option>03</option>
-                                    <option>04</option>
-                                    <option>05</option>
-                                    <option>06</option>
-                                    <option>07</option>
-                                    <option>08</option>
-                                    <option>09</option>
-                                    <option>10</option>
-                                    <option>11</option>
-                                    <option>12</option>
+                        <!-- Hours -->
+                        <div class="field">
+                            <div class="control has-icons-left">
+                              <div class="select is-success">
+                                <select id="hour">
+                                  <option selected>Hour</option>
+                                  <option>01</option>
+                                  <option>02</option>
+                                  <option>03</option>
+                                  <option>04</option>
+                                  <option>05</option>
+                                  <option>06</option>
+                                  <option>07</option>
+                                  <option>08</option>
+                                  <option>09</option>
+                                  <option>10</option>
+                                  <option>11</option>
+                                  <option>12</option>
                                 </select>
                                 <div class="icon is-left">
                                     <i class="far fa-clock"></i>
@@ -162,12 +162,12 @@
                             <input class="is-success minutes-input" type="number" placeholder="min" id="minutes"
                                 name="quantity" min="00" max="59">
 
-                            <!-- PM/AM -->
-                            <div class="select is-success">
-                                <select>
-                                    <option selected>Period</option>
-                                    <option>AM</option>
-                                    <option>PM</option>
+                              <!-- PM/AM -->
+                              <div class="select is-success">
+                                <select id="period">
+                                  <option selected>Period</option>
+                                  <option>AM</option>
+                                  <option>PM</option>
                                 </select>
                                 <div class="icon is-left">
                                     <i class="fas fa-moon"></i>
