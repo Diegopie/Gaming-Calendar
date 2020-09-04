@@ -1,4 +1,7 @@
-
+.centered-img {
+    display: flex;
+    justify-content: center;
+}
 /* stylying for search button */
 .padding-search {
     padding-top: 22px;
@@ -78,6 +81,10 @@
     display: flex;
     justify-content: center;
     padding-top: 40px;
+}
+
+.minutes-input {
+    padding: 8px;
 }
 
 .hide {

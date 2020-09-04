@@ -59,7 +59,6 @@
     <section id="game-contain" class="hide"> 
         <article class="section has-text-centered">
             <div class="columns is-mobile is-centered">
-                <!-- id's somewhere here -->
                 <div id="game-titl" class="column is-half">
                     
                 </div>
@@ -67,11 +66,13 @@
             </div>
         </article>
         <!-- img -->
-        <article class="section">
-            <figure id="game-img" class="image">
-                
+        <article class="media centered-img">
+            <figure id="game-img" class="image ml-5 mr-5">
+                <!-- placeholder img -->
+                <!-- <img src="assets/image/1249525.jpg" alt="" style="width: 850px;"> -->
             </figure>
         </article>
+        
         
 
         <!-- section with table -->
@@ -137,23 +138,64 @@
                     <div class="field">
                         <div class="control has-icons-left has-icons-right">
                             <input id="game-desc" class="input is-medium" type="text" placeholder="Small">
-                            
                             <span class="icon is-right">
                                 <i class="fas fa-check fa-sm"></i>
                             </span>
                         </div>
                     </div>
-
+                   <!-- date select -->
                     <div class="field">
                         <div class="control has-icons-left has-icons-right">
                             <input id="game-date" class="input is-medium" type="date" placeholder="Normal">
-                            
                             <span class="icon is-medium is-right">
                                 <i class="fas fa-check"></i>
                             </span>
                         </div>
+                        </div>
+
+                        <!-- Hours -->
+                        <div class="field">
+                            <div class="control has-icons-left">
+                              <div class="select is-success">
+                                <select>
+                                  <option selected>Hour</option>
+                                  <option>01</option>
+                                  <option>02</option>
+                                  <option>03</option>
+                                  <option>04</option>
+                                  <option>05</option>
+                                  <option>06</option>
+                                  <option>07</option>
+                                  <option>08</option>
+                                  <option>09</option>
+                                  <option>10</option>
+                                  <option>11</option>
+                                  <option>12</option>
+                                </select>
+                                <div class="icon is-left">
+                                    <i class="far fa-clock"></i>
+                                  </div>
+                              </div>
+
+                              <!-- Minutes -->
+                              <input class="is-success minutes-input" type="number" placeholder="min" id="minutes" name="quantity" min="00" max="59">
+
+                              <!-- PM/AM -->
+                              <div class="select is-success">
+                                <select>
+                                  <option selected>Period</option>
+                                  <option>AM</option>
+                                  <option>PM</option>
+                                </select>
+                                <div class="icon is-left">
+                                    <i class="fas fa-moon"></i>
+                                  </div>
+                              </div>
+                              
+                            </div>
+                          </div>
                     </div>
-                </div>
+     
             </div>
             <!-- create button -->
             <div class="create-btn">
@@ -163,6 +205,7 @@
     </section>
 
     <!-- event info -->
+    <!-- HIDE -->
     <section class="section">
         <div class="column">
             <div class="columns is-centered">
@@ -178,7 +221,6 @@
 
                             <!-- <a href="#">#css</a> <a href="#">#responsive</a>
                             <br>
-
                             <time datetime="">11:09 PM - 1 Jan 2016</time> -->
                         </div>
 
