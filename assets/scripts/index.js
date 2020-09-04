@@ -14,7 +14,7 @@ bulmaCarousel.attach('#slider', {
 // https://api.rawg.io/api/games?dates=2019-01-01,2019-12-31&ordering=-added
 
 $.ajax({
-    url: 'https:api.rawg.io/api/games?dates=2010-01-01,2020-09-01&ordering=-added',
+    url: 'https://api.rawg.io/api/games?dates=2010-01-01,2020-09-01&ordering=-added',
     method: 'GET',
 }).then(function (response) {
 
@@ -29,7 +29,7 @@ $.ajax({
 })
 
 $.ajax({
-    url: 'https:api.rawg.io/api/games?dates=2010-01-01,2020-09-01&ordering=-added',
+    url: 'https://api.rawg.io/api/games?dates=2010-01-01,2020-09-01&ordering=-added',
     method: 'GET',
 }).then(function (response) {
     i = Math.floor(Math.random() * 20);
@@ -42,7 +42,7 @@ $.ajax({
 })
 
 $.ajax({
-    url: 'https:api.rawg.io/api/games?dates=2010-01-01,2020-09-01&ordering=-added',
+    url: 'https://api.rawg.io/api/games?dates=2010-01-01,2020-09-01&ordering=-added',
     method: 'GET',
 }).then(function (response) {
     i = Math.floor(Math.random() * 20);
@@ -55,7 +55,7 @@ $.ajax({
 })
 
 $.ajax({
-    url: 'https:api.rawg.io/api/games?dates=2010-01-01,2020-09-01&ordering=-added',
+    url: 'https://api.rawg.io/api/games?dates=2010-01-01,2020-09-01&ordering=-added',
     method: 'GET',
 }).then(function (response) {
     i = Math.floor(Math.random() * 20);
@@ -68,7 +68,7 @@ $.ajax({
 })
 
 $.ajax({
-    url: 'https:api.rawg.io/api/games?dates=2010-01-01,2020-09-01&ordering=-added',
+    url: 'https://api.rawg.io/api/games?dates=2010-01-01,2020-09-01&ordering=-added',
     method: 'GET',
 }).then(function (response) {
     i = Math.floor(Math.random() * 20);
