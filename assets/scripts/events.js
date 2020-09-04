@@ -128,6 +128,8 @@
                 period = "T1"
             }
 
+        let qrDate = moment(rawDate).format('MMMM Do YYYY');
+
         let startDate = moment(rawDate).format('YYYYMMDD')
                 console.log(startDate);
 
@@ -135,10 +137,24 @@
         console.log("-- start date --");
         console.log(date);
 
-        // This doesnt work
-        let qrickURL = "<img src='https://qrickit.com/api/qr.php?d=BEGIN%3AVEVENT%0D%0ASUMMARY%3A" + subject+ "%0D%0ADESCRIPTION%3A"+desc+"%0D%0ADTSTART%3A"+date+"%0D%0AEND%3AVEVENT%0D%0A&t=g&addtext=&txtcolor=000000& fgdcolor=000000&bgdcolor=FFFFFF&qrsize=200'";
+        let qrickURL = "https://qrickit.com/api/qr.php?d=BEGIN%3AVEVENT%0D%0ASUMMARY%3A" + subject+ "%0D%0ADESCRIPTION%3A"+desc+"%0D%0ADTSTART%3A"+date+"%0D%0AEND%3AVEVENT%0D%0A&t=g&addtext=&txtcolor=000000& fgdcolor=000000&bgdcolor=FFFFFF&qrsize=200";
 
         console.log(qrickURL);
 
-        
+        let qrDiv = $("<div class='qr'>");
+        let qrP = $("<p>").text("Here is your invite code:");
+        qrDiv.append(qrP);
+        let qrH2 = $("<h2>").text(subject);
+        qrDiv.append(qrH2);
+        let qrH3 = $("<h3>").text(qrDate);
+        qrDiv.append(qrH3);
+        let qrImg = $("<img>").attr("src", qrickURL);
+        qrDiv.append(qrImg);
+        $(".qrColumn").append(qrDiv);
+        $("#copy-new").removeClass("hide"); 
+    });
+
+    // New event button
+    $('.event-btn').click(function(){
+        location.reload();
     });
