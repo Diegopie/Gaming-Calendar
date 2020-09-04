@@ -1,40 +1,55 @@
 # Gaming-Calendar
 
-# Project Description 
+## Project Description 
 
-For clan/group leaders to organize their play sessions
+For clan/group leaders to organize their play sessions.
 
-Allows them to plan and send invites accross different time zones
-    Invite inlcudes:
-        Game information
-        Time of play session
-        Store infomration
-        Other relevent infomration. 
+Allows them to plan and send invites across different time zones.
 
-Users can easily send all this information to their friend's prefered calendar application.
+    Invite includes:
+       - Game information
+       - Time of play session
+       - Store information
+       - Other relevant information. 
+
+Users can easily send all this information to their friend's preferred calendar application.
 
 
-
-
-# User Story 
+## User Story 
 
 As a clan/group leader who wants to plan a gaming session:
-    I have a searchbar to find my favorite games
 
+I have a search bar to find my favorite games
 
 When I find my favorite game,
-    I see relevant inforamtion about it.
+
+   * I see relevant information about it.
     I can save a list of favorite games
 
 When I want to make a play session
-    I can easily set a data, time, and description of what we're playing and send that to my friends
 
-Once Ive created a session, 
-    I can view my future sessions when visiting the site again. 
+   * I can easily set a data, time, and description of what we're playing and send that to my friends
+
+Once I've created a session, 
+
+   * I can view my future sessions when visiting the site again. 
+-----
+
+![Application landing page]()
+
+Link to the live site: [Gaming calendar](https://diegopie.github.io/Gaming-Calendar/)
+
+-----
+   
+### Teams
+Team leader: Diego Hernandez
+
+Team Capsule Corp. HTML/CSS: Anastaisha, Jordan Kirby
+
+Team Planet Nameik JavaScript/API: Diego Hernandez, Seth Martineau.
+
+### Credits
+Made by Anastaisha, Diego Hernandez, Seth Martineau, and Jordan Kirby
 
 
-
-
-
-
-draft 0.1
+Special thanks to: [qrickit.com](https://qrickit.com/qrickit_apps/qrickit_api.php) , [rawg.io](https://rawg.io/apidocs) for are API's and for [Bulma](https://bulma.io/) for the CSS framework.
