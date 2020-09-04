@@ -2,13 +2,8 @@
     display: flex;
     justify-content: center;
 }
-/* stylying for search button */
-.padding-search {
-    padding-top: 22px;
-    padding-left: 5px;
 
-    border: none;
-}
+/* stylying for search button */
 
 .button-search {
     padding: 20px;
@@ -24,7 +19,7 @@
 }
 
 /* game title, position for img */
-.game-title{
+.game-title {
     border: 1px solid black;
     padding: 10px;
     margin-bottom: -50px;
@@ -38,26 +33,18 @@
     justify-content: center;
     align-items: center;
 
-   margin-top: -20px;
-}
-
-
-.table-info {
-    display: flex;
-    justify-content: center;
+    margin-top: -20px;
 }
 
 /* buttons */
 .buttons {
-    display: flex;
-    justify-content: space-between;
-
-    padding-top: 30px;
+    padding: 20px;
 }
 
 .clear-button {
     margin-left: 70px;
     padding: 10px 50px 10px;
+
 }
 
 .next-button {
@@ -89,4 +76,11 @@
 
 .hide {
     display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .button-search {
+        margin-left: 110px;
+        width: 80px;
+    }
 }
