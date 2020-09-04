@@ -95,8 +95,8 @@
     }
 
     // Render QR Code
-    function renderQR(URL, Title, Date) {
-                // console.log(URL);
+    function renderQR(URL, Title, Date, Time) {
+                console.log(Time);
         // Create and Append HTML Elements based on User Calendar Valeus
         let qrDiv = $("<div class='qr card'>");
         let cardCont = $("<div class='card-content>")
@@ -107,6 +107,8 @@
         qrDiv.append(qrH2);
         let qrH3 = $("<h3>").text(Date);
         qrDiv.append(qrH3);
+        let qrTime = $("<h3>").text(moment(Time, "HHmm").format("LT"));
+        qrDiv.append(qrTime);
         let qrImg = $("<img>").attr("src", URL);
         qrDiv.append(qrImg);
         $(".qrColumn").append(qrDiv);
@@ -147,7 +149,7 @@
     // Create Button: Make QRickit Requesed 
     $('.create-btn').click(function(){
         // Reset Invalid Field Message
-        $('#msg').text("")        
+        $('#cal-msg').text("")        
         // Grab user event name
         let subject = $('#game-title').val();
                 console.log("-- QR CODE --");
@@ -195,9 +197,6 @@
             if (min === null) {            
                 calMessage("A minute must be selected");
                 return;
-            // Convert to usable minute
-            } else if (min < 10) {
-                min = 0 + min;
             }
         // Grab user period
         let period = $('#period').val()
@@ -206,23 +205,24 @@
             if (period === null) {
                 calMessage("A period must be selected");
                 return;
-            // Convert to useable period
-            } else if (period === "AM") {
-                period = "T0"
-            } else {
-                period = "T1"
+            // Convert hour to military time
+            } else if (period === "PM" && hour < 12) {                
+                hour = parseInt(hour)  + 12
+            } else if (period === "AM" && hour === "12") {                
+                hour = parseInt(hour)  + 12
             }
 
         // Convert user date so it can be displayed nicely on DOM
         let qrDate = moment(rawDate).format('MMMM Do YYYY');        
         
         // Combine user time selections to usable string
-        let date = startDate + period + hour + min + "00"
+        let time = hour + min
+        let date = startDate + "T" + time + "00"
                 console.log("-- start date --");
                 console.log(date);
-        if (startDate+hour+min < moment().format("YYYYMMDDhmm")) {
-            console.log(startDate+hour+min);
-            console.log(moment().format("YYYYMMDDhmm"));
+        if (startDate+time < moment().format("YYYYMMDDHHmm")) {
+            console.log(startDate+time);
+            console.log(moment().format("YYYYMMDDHHmm"));
             calMessage("Event cannot be in the past");
             return;
         }
@@ -232,7 +232,7 @@
                 console.log(qrickURL);
 
         // Run renderQR() by Passing These Variables
-        renderQR(qrickURL, subject, qrDate);
+        renderQR(qrickURL, subject, qrDate, time);
     });
 
     // New Event Button: Reload Page
