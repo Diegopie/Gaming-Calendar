@@ -137,6 +137,8 @@
 
     // Create Button: Make QRickit Requesed 
     $('.create-btn').click(function(){
+        // Reset Invalid Field Message
+        $('#msg').text("")        
         // Grab user event name
         let subject = $('#game-title').val();
                 console.log("-- QR CODE --");
@@ -166,7 +168,7 @@
                 return;
             // Check if date is in the past
             } else if (startDate < moment().format('YYYYMMDD')){
-                calMessage("Event cannot be in the past");
+                calMessage("Date cannot be in the past");
                 return;
             }
         // Grab user hour
@@ -178,10 +180,10 @@
                 return;
             }
         // Grab user mintutes
-        let min = $('.minutes-input').val()
+        let min = $('#minutes').val()
                 console.log(min);
             // Check if valid
-            if (min === "") {            
+            if (min === null) {            
                 calMessage("A minute must be selected");
                 return;
             // Convert to usable minute
@@ -209,6 +211,12 @@
         let date = startDate + period + hour + min + "00"
                 console.log("-- start date --");
                 console.log(date);
+        if (startDate+hour+min < moment().format("YYYYMMDDhmm")) {
+            console.log(startDate+hour+min);
+            console.log(moment().format("YYYYMMDDhmm"));
+            calMessage("Event cannot be in the past");
+            return;
+        }
 
         // Create QR URL based on converted user values
         let qrickURL = "https://qrickit.com/api/qr.php?d=BEGIN%3AVEVENT%0D%0ASUMMARY%3A" + subject+ "%0D%0ADESCRIPTION%3A"+desc+"%0D%0ADTSTART%3A"+date+"%0D%0AEND%3AVEVENT%0D%0A&t=g&addtext=&txtcolor=000000& fgdcolor=000000&bgdcolor=FFFFFF&qrsize=200";
