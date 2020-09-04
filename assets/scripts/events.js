@@ -203,7 +203,7 @@
         let period = $('#period').val()
                 console.log(period);
             // Check if valid
-            if (period === "Period") {
+            if (period === null) {
                 calMessage("A period must be selected");
                 return;
             // Convert to useable period
