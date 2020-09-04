@@ -119,9 +119,6 @@
 
         let min = $('.minutes-input').val()
                 console.log(min);
-            if (min < 10) {
-                min = "0"+min
-            }
 
         let period = $('#period').val()
                 console.log(period);
