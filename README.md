@@ -35,7 +35,7 @@ Once I've created a session,
    * I can view my future sessions when visiting the site again. 
 -----
 
-![Application landing page](URL)
+![Application landing page]()
 
 Link to the live site: [Gaming calendar](https://diegopie.github.io/Gaming-Calendar/)
 
