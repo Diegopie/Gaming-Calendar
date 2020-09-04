@@ -11,14 +11,6 @@
     <!-- css file -->
     <link rel="stylesheet" href="assets\style.css">
 
-    <!-- calendar css -->
-    <link rel="stylesheet" href="assets\calendar\css\evo-calendar.css" />
-    <!-- optional css -->
-    <link rel="stylesheet" href="assets\calendar\css\evo-calendar.midnight-blue.css" />
-    <link rel="stylesheet" href="assets\calendar\css\evo-calendar.orange-coral.css" />
-    <link rel="stylesheet" href="assets\calendar\css\evo-calendar.royal-navy.css" />
-</head>
-
 <body>
     <!-- header -->
     <section class="hero is-primary">
@@ -32,7 +24,7 @@
     </section>
 
     <!-- search input -->
-    
+
     <section id="game-search">
         <article class="section">
             <div class="columns is-centered">
@@ -54,13 +46,13 @@
         </article>
     </section>
 
-        <!-- game img/game title -->
-        <!-- HIDE ME -->
-    <section id="game-contain" class="hide"> 
+    <!-- game img/game title -->
+    <!-- HIDE ME -->
+    <section id="game-contain" class="hide">
         <article class="section has-text-centered">
             <div class="columns is-mobile is-centered">
                 <div id="game-titl" class="column is-half">
-                    
+
                 </div>
 
             </div>
@@ -72,8 +64,8 @@
                 <!-- <img src="assets/image/1249525.jpg" alt="" style="width: 850px;"> -->
             </figure>
         </article>
-        
-        
+
+
 
         <!-- section with table -->
         <article class="section has-text-centered table-info">
@@ -109,99 +101,89 @@
         </article>
     </section>
 
-    <!-- Calendar & Form -->
-    <!-- HIDE ME -->
-    <section id="cal-contain" class="section has-text-centered hide">
-        <article class="column">
-            <div class="columns is-centered">
-                <!-- calendar -->
-                <div id="evoCalendar"></div>
-            </div>
-        </article>
-    
-
     <!-- form section -->
-        <article class="section">
-            <div class="columns has-text-centered is-centered">
-                <div class="column is-half">
-                    <div class="field">
-                        <label class="label is-medium">Medium input</label>
-                        <div class="control has-icons-left has-icons-right">
-                            <input id="game-title" class="input is-medium" type="text" placeholder="Extra small">
-                            
-                            <span class="icon is-small is-right">
-                                <i class="fas fa-check fa-xs"></i>
-                            </span>
-                        </div>
+    <article class="section">
+        <div class="columns has-text-centered is-centered">
+            <div class="column is-half">
+                <div class="field">
+                    <label class="label is-medium">Medium input</label>
+                    <div class="control has-icons-left has-icons-right">
+                        <input id="game-title" class="input is-medium" type="text" placeholder="Extra small">
+
+                        <span class="icon is-small is-right">
+                            <i class="fas fa-check fa-xs"></i>
+                        </span>
                     </div>
+                </div>
 
-                    <div class="field">
-                        <div class="control has-icons-left has-icons-right">
-                            <input id="game-desc" class="input is-medium" type="text" placeholder="Small">
-                            <span class="icon is-right">
-                                <i class="fas fa-check fa-sm"></i>
-                            </span>
-                        </div>
+                <div class="field">
+                    <div class="control has-icons-left has-icons-right">
+                        <input id="game-desc" class="input is-medium" type="text" placeholder="Small">
+                        <span class="icon is-right">
+                            <i class="fas fa-check fa-sm"></i>
+                        </span>
                     </div>
-                   <!-- date select -->
-                    <div class="field">
-                        <div class="control has-icons-left has-icons-right">
-                            <input id="game-date" class="input is-medium" type="date" placeholder="Normal">
-                            <span class="icon is-medium is-right">
-                                <i class="fas fa-check"></i>
-                            </span>
-                        </div>
-                        </div>
+                </div>
+                <!-- date select -->
+                <div class="field">
+                    <div class="control has-icons-left has-icons-right">
+                        <input id="game-date" class="input is-medium" type="date" placeholder="Normal">
+                        <span class="icon is-medium is-right">
+                            <i class="fas fa-check"></i>
+                        </span>
+                    </div>
+                </div>
 
-                        <!-- Hours -->
-                        <div class="field">
-                            <div class="control has-icons-left">
-                              <div class="select is-success">
-                                <select>
-                                  <option selected>Hour</option>
-                                  <option>01</option>
-                                  <option>02</option>
-                                  <option>03</option>
-                                  <option>04</option>
-                                  <option>05</option>
-                                  <option>06</option>
-                                  <option>07</option>
-                                  <option>08</option>
-                                  <option>09</option>
-                                  <option>10</option>
-                                  <option>11</option>
-                                  <option>12</option>
-                                </select>
-                                <div class="icon is-left">
-                                    <i class="far fa-clock"></i>
-                                  </div>
-                              </div>
-
-                              <!-- Minutes -->
-                              <input class="is-success minutes-input" type="number" placeholder="min" id="minutes" name="quantity" min="00" max="59">
-
-                              <!-- PM/AM -->
-                              <div class="select is-success">
-                                <select>
-                                  <option selected>Period</option>
-                                  <option>AM</option>
-                                  <option>PM</option>
-                                </select>
-                                <div class="icon is-left">
-                                    <i class="fas fa-moon"></i>
-                                  </div>
-                              </div>
-                              
+                <!-- Hours -->
+                <div class="field">
+                    <div class="control has-icons-left">
+                        <div class="select is-success">
+                            <select>
+                                <option selected>Hour</option>
+                                <option>01</option>
+                                <option>02</option>
+                                <option>03</option>
+                                <option>04</option>
+                                <option>05</option>
+                                <option>06</option>
+                                <option>07</option>
+                                <option>08</option>
+                                <option>09</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                            </select>
+                            <div class="icon is-left">
+                                <i class="far fa-clock"></i>
                             </div>
-                          </div>
+                        </div>
+
+                        <!-- Minutes -->
+                        <input class="is-success minutes-input" type="number" placeholder="min" id="minutes"
+                            name="quantity" min="00" max="59">
+
+                        <!-- PM/AM -->
+                        <div class="select is-success">
+                            <select>
+                                <option selected>Period</option>
+                                <option>AM</option>
+                                <option>PM</option>
+                            </select>
+                            <div class="icon is-left">
+                                <i class="fas fa-moon"></i>
+                            </div>
+                        </div>
+
                     </div>
-     
+                </div>
             </div>
-            <!-- create button -->
-            <div class="create-btn">
-                <button class="button create-button">Create</button>
-            </div>
-        </article>
+
+        </div>
+        <!-- create button -->
+        <div class="create-btn">
+            <button class="button create-button">Create</button>
+        </div>
+    </article>
     </section>
 
     <!-- event info -->
@@ -250,12 +232,8 @@
 
     <!-- Scripts -->
     <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <!-- calendar functionality -->
-    <script src="assets\calendar\js\evo-calendar.js"></script>
-    <script>
-        $('#evoCalendar').evoCalendar();
-    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <!-- font-awesome -->
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <!-- our scripts -->
