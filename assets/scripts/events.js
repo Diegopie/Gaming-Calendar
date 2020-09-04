@@ -106,5 +106,15 @@
     })
 
     $('.create-btn').click(function(){
-
+        let qrDiv = $("<div class='qr'>");
+        let subject = $("#game-title").val(); 
+        let qrH2 = $("<h2>").text(subject);
+        qrDiv.append(qrH2);
+        // let rawDate = $("game-date");
+        // let qrH3 = $("<h3>").text(game-date);
+        // qrDiv.append(qrH3);
+        // let qrickURL = subject;
+        // let qrImg = $("<img>").attr("src", qrickURL);
+        // qrDiv.append(qrImg);
+        $(".qrColumn").append(qrDiv);
     })
