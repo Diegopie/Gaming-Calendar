@@ -45,7 +45,7 @@
 
         // Variables to create HTML elements and store parsed gameData values
         let title = $('<h2>').text(gameData.title).addClass("title is-4 game-title");
-        let img = $('<img>').attr('src', gameData.image).addClass("whatever").attr('alt', gameData.title);
+        let img = $('<img>').attr('src', gameData.image).attr('alt', gameData.title);
         let platString = "";
         let storeString = "";
         let genresString = "";
@@ -100,15 +100,16 @@
         // Create and Append HTML Elements based on User Calendar Values
         let qrDiv = $("<div class='qr card my-2 mx-2'>");
         let cardCont = $("<div class='card-content>");
-        let qrP = $("<h2>").text("Here is your invite code!").attr("class", "qr-gen-titl");
-        qrDiv.append(qrP);
+        let qrP = $("<h2>").text("Here is your invite code!").attr("class", "card-title is-size-2 has-text-weight-bold my-4 mx-4");
+        $(".qrColumn").append(qrP);
         qrDiv.append(cardCont);
+        qrDiv.append(qrP)
         cardCont.append(qrP);
-        let qrH2 = $("<h2>").text(Title);
+        let qrH2 = $("<h2>").text(Title).addClass('is-size-2');
         qrDiv.append(qrH2);
-        let qrH3 = $("<h3>").text(Date);
+        let qrH3 = $("<h3>").text(Date).addClass('is-size-3');
         qrDiv.append(qrH3);
-        let qrTime = $("<h3>").text(moment(Time, "HHmm").format("LT"));
+        let qrTime = $("<h3>").text(moment(Time, "HHmm").format("LT")).addClass('is-size-3');
         qrDiv.append(qrTime);
         let qrImg = $("<img>").attr("src", URL).attr("alt", Title);
         qrDiv.append(qrImg);
