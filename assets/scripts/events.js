@@ -12,11 +12,31 @@
         released: "",
     };
 
+
 // * Functions
+
+    // Check Local Storage for Key
+    function checkLocal () {
+        let localGame = localStorage.getItem("passGame");
+        // See if key is null
+        if (localGame === null) {
+                    // console.log("test");
+            return;
+        }
+        // If key has value, update value of selectedGame
+        selectedGame = localGame;
+        // Remove key from local storage so same game doesn't load everytime
+        localStorage.removeItem("passGame")
+        // Run rawgReq with game from local storage
+        rawgReq(selectedGame);
+    };
+
     // Create AJAX Request to RAWG API
     function rawgReq() {        
         let url = 'https://api.rawg.io/api/games?search=' + selectedGame;
                 // console.log(url);
+        // Hide search bar
+        $('#game-search').addClass('hide');
         $.ajax({
             url: url,
             method: "GET"
@@ -80,8 +100,6 @@
         // Display container for game content
         $('#game-contain').removeClass('hide');
 
-        // Hide search bar
-        $('#game-search').addClass('hide');
     }
 
     // Display Message if User Inputs are Not Valid
@@ -241,3 +259,6 @@
     $('.event-btn').click(function(){
         location.reload();
     });
+
+// * To Run On Page Load
+    checkLocal()
