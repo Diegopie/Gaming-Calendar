@@ -45,7 +45,7 @@
 
         // Variables to create HTML elements and store parsed gameData values
         let title = $('<h2>').text(gameData.title).addClass("title is-4 game-title");
-        let img = $('<img>').attr('src', gameData.image).addClass("whatever");
+        let img = $('<img>').attr('src', gameData.image).addClass("whatever").attr('alt', gameData.title);
         let platString = "";
         let storeString = "";
         let genresString = "";
@@ -97,11 +97,11 @@
     // Render QR Code
     function renderQR(URL, Title, Date, Time) {
                 console.log(Time);
-        // Create and Append HTML Elements based on User Calendar Valeus
+        // Create and Append HTML Elements based on User Calendar Values
         let qrDiv = $("<div class='qr card my-2 mx-2'>");
         let cardCont = $("<div class='card-content>");
         let qrP = $("<h2>").text("Here is your invite code!").attr("class", "qr-gen-titl");
-        $(".qrColumn").append(qrP);
+        qrDiv.append(qrP);
         qrDiv.append(cardCont);
         cardCont.append(qrP);
         let qrH2 = $("<h2>").text(Title);
@@ -110,7 +110,7 @@
         qrDiv.append(qrH3);
         let qrTime = $("<h3>").text(moment(Time, "HHmm").format("LT"));
         qrDiv.append(qrTime);
-        let qrImg = $("<img>").attr("src", URL);
+        let qrImg = $("<img>").attr("src", URL).attr("alt", Title);
         qrDiv.append(qrImg);
         $(".qrColumn").append(qrDiv);
         $("#copy-new").removeClass("hide"); 

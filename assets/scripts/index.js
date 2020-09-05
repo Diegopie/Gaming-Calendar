@@ -21,11 +21,8 @@ $.ajax({
     i = Math.floor(Math.random() * 20);
     console.log(response)
     //function(response)
-    $('#randomPic1').html('<img src=' + response.results[i].background_image + ' />');
+    $('#randomPic1').html('<img src=' + response.results[i].background_image + ' />').attr('alt', response.results[i].name).attr('value', response.results[i].name);
     $('.item__title1').html(response.results[i].name);
-
-
-
 })
 
 $.ajax({
@@ -35,10 +32,8 @@ $.ajax({
     i = Math.floor(Math.random() * 20);
     console.log(response)
     //function(response)
-    $('#randomPic2').html('<img src=' + response.results[i].background_image + ' />');
+    $('#randomPic2').html('<img src=' + response.results[i].background_image + ' />').attr('alt', response.results[i].name).attr('value', response.results[i].name);
     $('.item__title2').html(response.results[i].name);
-
-
 })
 
 $.ajax({
@@ -48,10 +43,8 @@ $.ajax({
     i = Math.floor(Math.random() * 20);
     console.log(response)
     //function(response)
-    $('#randomPic3').html('<img src=' + response.results[i].background_image + ' />');
+    $('#randomPic3').html('<img src=' + response.results[i].background_image + ' />').attr('alt', response.results[i].name).attr('value', response.results[i].name);
     $('.item__title3').html(response.results[i].name);
-
-
 })
 
 $.ajax({
@@ -61,10 +54,8 @@ $.ajax({
     i = Math.floor(Math.random() * 20);
     console.log(response)
     //function(response)
-    $('#randomPic4').html('<img src=' + response.results[i].background_image + ' />');
+    $('#randomPic4').html('<img src=' + response.results[i].background_image + ' />').attr('alt', response.results[i].name).attr('value', response.results[i].name);
     $('.item__title4').html(response.results[i].name);
-
-
 })
 
 $.ajax({
@@ -74,8 +65,6 @@ $.ajax({
     i = Math.floor(Math.random() * 20);
     console.log(response)
     //function(response)
-    $('#randomPic5').html('<img src=' + response.results[i].background_image + ' />');
+    $('#randomPic5').html('<img src=' + response.results[i].background_image + ' />').attr('alt', response.results[i].name).attr('value', response.results[i].name);
     $('.item__title5').html(response.results[i].name);
-
-
 })
