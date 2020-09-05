@@ -68,3 +68,14 @@ $.ajax({
     $('#randomPic5').html('<img src=' + response.results[i].background_image + ' />').attr('alt', response.results[i].name).attr('value', response.results[i].name);
     $('.item__title5').html(response.results[i].name);
 })
+
+// * Listener To Send User to Events and Load the Game They Clicked
+$("#slider").click(function(){
+    // Get value of what they clicked
+    let userGame = $(event.target).parent()[0].attributes[3].value
+            console.dir(userGame);
+    // Store value in local storage
+    localStorage.setItem('passGame', userGame)
+    // Send user to events.html
+    window.location.href = "events.html"
+})
