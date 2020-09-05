@@ -98,9 +98,10 @@
     function renderQR(URL, Title, Date, Time) {
                 console.log(Time);
         // Create and Append HTML Elements based on User Calendar Valeus
-        let qrDiv = $("<div class='qr card'>");
-        let cardCont = $("<div class='card-content>")
-        let qrP = $("<p>").text("Here is your invite code:");
+        let qrDiv = $("<div class='qr card my-2 mx-2'>");
+        let cardCont = $("<div class='card-content>");
+        let qrP = $("<h2>").text("Here is your invite code!").attr("class", "qr-gen-titl");
+        $(".qrColumn").append(qrP);
         qrDiv.append(cardCont);
         cardCont.append(qrP);
         let qrH2 = $("<h2>").text(Title);
