@@ -1,7 +1,8 @@
-.centered-img {
-    display: flex;
-    justify-content: center;
+.wrapper {
+    height: 100%;
+    min-height: 100vh;
 }
+
 /* stylying for search button */
 .padding-search {
     padding-top: 22px;
@@ -10,12 +11,14 @@
     border: none;
 }
 
+.buttonEl {
+    display: flex;
+    justify-content: center;
+}
+
 .button-search {
-    padding: 20px;
     background-color: black;
     color: #fff;
-
-    border: none;
 }
 
 .button-search:hover {
@@ -24,27 +27,25 @@
 }
 
 /* game title, position for img */
-.game-title{
-    border: 1px solid black;
-    padding: 10px;
-    margin-bottom: -50px;
-
-    background-color: black;
-    color: #fff;
+.centered-img {
+    display: flex;
+    justify-content: center;
 }
 
-.game-img {
+/* .game-img {
     display: flex;
     justify-content: center;
     align-items: center;
 
    margin-top: -20px;
-}
+} */
 
 
-.table-info {
+.table-size{
     display: flex;
     justify-content: center;
+
+    /* width: 40em; */
 }
 
 /* buttons */
@@ -57,13 +58,12 @@
 
 .clear-button {
     margin-left: 70px;
-    padding: 10px 50px 10px;
+    padding: 10px 30px 10px;
 }
 
 .next-button {
     margin-right: 70px;
-    padding: 10px 50px 10px;
-
+    padding: 10px 30px 10px;
 }
 
 .create-btn {
@@ -89,4 +89,23 @@
 
 .hide {
     display: none;
+}
+
+/* ---------------- */
+@media only screen and (max-width: 600px) {
+   .table-info {
+       width: 20px;
+   }
+
+   .table-text {
+       font-size: 14px;
+   }
+
+   .clear-button {
+       padding: 15px;
+   }
+
+   .next-button {
+       padding: 15px;
+   }
 }
