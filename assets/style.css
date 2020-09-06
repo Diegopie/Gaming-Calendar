@@ -84,3 +84,11 @@
         width: 80px;
     }
 }
+
+.border {
+    background-color: silver;
+}
+
+.card-content {
+    background-color: silver;
+}
