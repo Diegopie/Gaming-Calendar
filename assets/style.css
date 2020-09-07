@@ -96,6 +96,10 @@
     display: none;
 }
 
+.card-content {
+    background-color: rgb(138, 12, 12);
+}
+
 /* ---------------- */
 @media only screen and (max-width: 600px) {
     .table-info {
@@ -118,13 +122,5 @@
             margin-left: 110px;
             width: 80px;
         }
-    }
-
-    .background {
-        background-color: silver;
-    }
-
-    .card-content {
-        background-color: rgb(138, 12, 12);
     }
 }
