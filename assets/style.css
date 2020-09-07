@@ -17,7 +17,7 @@
 }
 
 .button-search {
-    padding: 20px;
+    /* padding: 20px; */
     background-color: black;
     color: #fff;
     border: none;
@@ -97,7 +97,19 @@
 }
 
 .card-content {
-    background-color: rgb(138, 12, 12);
+    background-color: #F3F3F3;
+}
+
+.card {
+    background-color: #F3F3F3;
+}
+
+.box {
+    background-color: #F3F3F3;
+}
+
+.table {
+    background-color: #F3F3F3
 }
 
 /* ---------------- */
@@ -116,11 +128,5 @@
 
     .next-button {
         padding: 15px;
-    }
-    @media only screen and (max-width: 600px) {
-        .button-search {
-            margin-left: 110px;
-            width: 80px;
-        }
     }
 }
