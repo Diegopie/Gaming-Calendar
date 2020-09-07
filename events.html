@@ -15,262 +15,246 @@
 
 <body>
     <!-- header -->
-    <section class="hero is-primary">
-        <div class="hero-body">
-            <div class="container has-text-centered">
-                <h1 class="title">
-                    <a class="has-text-white" href="./index.html">QR-aid Codes</a>
-                </h1>
-                <h2 class="subtitle">
-                    Create your event here
-                </h2>
-            </div>
-        </div>
-    </section>
-
-    <!-- search input -->
-    <section id="game-search">
-        <article class="section is-mobile pr-6 pl-6">
-            <div class="columns is-centered">
-                <div class="column is-half">
-                    <div class="field">
-                        <div class="control">
-                            <input id="user-text" class="input black" type="search" placeholder="Search Your Game">
-                        </div>
-                    </div>
-
-                </div>
-                <!-- search icon -->
-                <div id="user-search" class="columns pt-5 pl-2">
-                    <a class="button button-search">
-                        <i class="fas fa-search"></i>
-                    </a>
+    <main class="wrapper">
+        <section class="hero is-primary">
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <h1 class="title">
+                        <a class="has-text-white" href="./index.html">QR-aid Codes</a>
+                    </h1>
+                    <h2 class="subtitle">
+                        Create your event here
+                    </h2>
                 </div>
             </div>
-
-            <div class="columns is-centered">
-                <div id="sear-msg"></div>
-            </div>
-
-        </article>
-    </section>
-
-    <!-- game img/game title -->
-    <!-- HIDE ME -->
-    <section id="game-contain" class="hide">
-        <article class="section has-text-centered">
-            <div class="columns is-mobile is-centered">
-                <div id="game-titl" class="column is-half">
-
-                </div>
-
-            </div>
-        </article>
-        <!-- img -->
-        <article class="media centered-img">
-            <figure id="game-img" class="image ml-5 mr-5">
-                <!-- placeholder img -->
-                <!-- <img src="assets/image/1249525.jpg" alt="" style="width: 850px;"> -->
-            </figure>
-        </article>
-
-        <div class="container">
-
-            <article class="section has-text-centered">
-                <div class="columns ">
-                    <div class="column is-10 is-offset-1">
-                        <div class="box">
-                            <table class="table is-bordered is-6 is-offset-1">
-                                <thead>
-                                    <tr>
-                                        <th>Platforms</th>
-                                        <th>Available On</th>
-                                        <th>Genre</th>
-                                        <th>Released</th>
-                                    </tr>
-                                </thead>
-
-                                <tbody>
-                                    <tr>
-                                        <td id="platforms"></td>
-                                        <td id="store"></td>
-                                        <td id="genres"></td>
-                                        <td id="date"></td>
-                                    </tr>
-
-                                </tbody>
-                            </table>
-                            <!-- buttons -->
-                            <div class="buttons is-centered">
-                                <button class="button clear-button">Clear</button>
-                                <button class="button next-button">Next</button>
+        </section>
+    
+        <!-- Search Container -->
+        <section id="game-search">
+            <article class="section is-mobile pr-6 pl-6">
+                <div class="columns is-centered">
+                    <div class="column is-half">
+                        <div class="field">
+                            <!-- Search box -->
+                            <div class="control">
+                                <input id="user-text" class="input black" type="search" placeholder="Search Your Game">
                             </div>
                         </div>
+                    </div>
+                    <!-- Search icon -->
+                    <div id="user-search" class="columns pt-5 pl-2">
+                        <a class="button button-search">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Container for JS invalid user value message -->
+                <div class="columns is-centered">
+                    <div id="sear-msg"></div>
+                </div>
+            </article>
+        </section>
+
+        <!-- Game Info Container -->
+        <!-- HIDE ME -->
+        <section id="game-contain" class="hide">
+            <!-- Game title -->
+            <article class="section has-text-centered">
+                <div class="columns is-mobile is-centered">
+                    <div id="game-titl" class="column is-half"></div>
+                </div>
+            </article>
+            <!-- Game image -->
+            <article class="media centered-img">
+                <figure id="game-img" class="image ml-5 mr-5"></figure>
+            </article>            
+            <!-- Game data table -->
+            <article class="section has-text-centered table-size">
+                <div class="columns ">
+                    <div class="column">                            
+                        <table class="table is-bordered table-text">
+                            <thead>
+                                <tr>
+                                    <th>Platforms</th>
+                                    <th>Available On</th>
+                                    <th>Genre</th>
+                                    <th>Released</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td id="platforms"></td>
+                                    <td id="store"></td>
+                                    <td id="genres"></td>
+                                    <td id="date"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- buttons -->
+                        <div class="buttons is-centered">
+                            <button class="button clear-button">Clear</button>
+                            <button class="button next-button">Next</button>
+                        </div>                            
                     </div>
                 </div>
             </article>
+        </section>
 
-        </div>
-
-        <!-- section with table -->
-
-    </section>
-
-    <!-- form section -->
-    <!-- HIDE ME -->
-    <section id="cal-contain" class="section has-text-centered hide">
-        <article class="section">
-            <div class="columns has-text-centered is-centered">
-                <div class="column is-half box">
-                    <div class="field">
-                        <label class="label is-medium">Add the Details of Your Event</label>
-                        <div class="control has-icons-left has-icons-right">
-                            <input id="game-title" class="input is-medium" type="text" placeholder="Name of Event">
-                        </div>
-                    </div>
-
-                    <div class="field">
-                        <div class="control has-icons-left has-icons-right">
-                            <input id="game-desc" class="input is-medium" type="text" placeholder="Event Details">
-                        </div>
-                    </div>
-                    <!-- date select -->
-                    <div class="field">
-                        <div class="control has-icons-left has-icons-right">
-                            <input id="game-date" class="input is-medium" type="date" placeholder="Normal">
-                        </div>
-                    </div>
-
-                    <!-- Hours -->
-                    <div class="field">
-                        <div class="control has-icons-left">
-                            <div class="select is-success hour-input is-mobile">
-                                <select id="hour">
-                                    <option selected disabled>Hour</option>
-                                    <option>01</option>
-                                    <option>02</option>
-                                    <option>03</option>
-                                    <option>04</option>
-                                    <option>05</option>
-                                    <option>06</option>
-                                    <option>07</option>
-                                    <option>08</option>
-                                    <option>09</option>
-                                    <option>10</option>
-                                    <option>11</option>
-                                    <option>12</option>
-                                </select>
-                                <div class="icon is-left">
-                                    <i class="far fa-clock"></i>
-                                </div>
+        <!-- Form Section -->
+        <!-- HIDE ME -->
+        <section id="cal-contain" class="section has-text-centered hide">
+            <article class="section">
+                <div class="columns has-text-centered is-centered">
+                    <div class="column is-half box">
+                        <div class="field">
+                            <!-- Event title -->
+                            <label class="label is-medium">Add the Details of Your Event</label>
+                            <div class="control has-icons-left has-icons-right">
+                                <input id="game-title" class="input is-medium" type="text" placeholder="Name of Event">
                             </div>
-
-                            <!-- Minutes -->
-                            <div class="select is-success ">
-                                <select id="minutes">
-                                    <option selected disabled>Minutes</option>
-                                    <option>00</option>
-                                    <option>01</option>
-                                    <option>02</option>
-                                    <option>03</option>
-                                    <option>04</option>
-                                    <option>05</option>
-                                    <option>06</option>
-                                    <option>07</option>
-                                    <option>08</option>
-                                    <option>09</option>
-                                    <option>10</option>
-                                    <option>11</option>
-                                    <option>12</option>
-                                    <option>13</option>
-                                    <option>14</option>
-                                    <option>15</option>
-                                    <option>16</option>
-                                    <option>17</option>
-                                    <option>18</option>
-                                    <option>19</option>
-                                    <option>20</option>
-                                    <option>21</option>
-                                    <option>22</option>
-                                    <option>23</option>
-                                    <option>24</option>
-                                    <option>25</option>
-                                    <option>26</option>
-                                    <option>27</option>
-                                    <option>28</option>
-                                    <option>29</option>
-                                    <option>30</option>
-                                    <option>31</option>
-                                    <option>32</option>
-                                    <option>33</option>
-                                    <option>34</option>
-                                    <option>35</option>
-                                    <option>36</option>
-                                    <option>37</option>
-                                    <option>38</option>
-                                    <option>39</option>
-                                    <option>40</option>
-                                    <option>41</option>
-                                    <option>42</option>
-                                    <option>43</option>
-                                    <option>44</option>
-                                    <option>45</option>
-                                    <option>46</option>
-                                    <option>47</option>
-                                    <option>48</option>
-                                    <option>49</option>
-                                    <option>50</option>
-                                    <option>51</option>
-                                    <option>52</option>
-                                    <option>53</option>
-                                    <option>54</option>
-                                    <option>55</option>
-                                    <option>56</option>
-                                    <option>57</option>
-                                    <option>58</option>
-                                    <option>59</option>
-                                </select>
-                                <div class="icon is-left">
-                                    <i class="far fa-clock"></i>
-                                </div>
+                        </div>
+                        <!-- Event details -->
+                        <div class="field">
+                            <div class="control has-icons-left has-icons-right">
+                                <input id="game-desc" class="input is-medium" type="text" placeholder="Event Details">
                             </div>
-
-
-                            <!-- PM/AM -->
-                            <div class="select is-success">
-                                <select id="period">
-                                    <option selected disabled>Period</option>
-                                    <option>AM</option>
-                                    <option>PM</option>
-                                </select>
-                                <div class="icon is-left">
-                                    <i class="fas fa-moon"></i>
-                                </div>
+                        </div>
+                        <!-- Date selector -->
+                        <div class="field">
+                            <div class="control has-icons-left has-icons-right">
+                                <input id="game-date" class="input is-medium" type="date" placeholder="Normal">
                             </div>
-                            <!-- create button -->
-                            <div class="create-btn">
-                                <button class="button create-button is-info is-rounded is-large">Create</button>
+                        </div>
+                        <!-- Hours -->
+                        <div class="field">
+                            <div class="control has-icons-left">
+                                <div class="select is-success hour-input is-mobile">
+                                    <select id="hour">
+                                        <option selected disabled>Hour</option>
+                                        <option>01</option>
+                                        <option>02</option>
+                                        <option>03</option>
+                                        <option>04</option>
+                                        <option>05</option>
+                                        <option>06</option>
+                                        <option>07</option>
+                                        <option>08</option>
+                                        <option>09</option>
+                                        <option>10</option>
+                                        <option>11</option>
+                                        <option>12</option>
+                                    </select>
+                                    <div class="icon is-left">
+                                        <i class="far fa-clock"></i>
+                                    </div>
+                                </div>
+                                <!-- Minutes -->
+                                <div class="select is-success ">
+                                    <select id="minutes">
+                                        <option selected disabled>Minutes</option>
+                                        <option>00</option>
+                                        <option>01</option>
+                                        <option>02</option>
+                                        <option>03</option>
+                                        <option>04</option>
+                                        <option>05</option>
+                                        <option>06</option>
+                                        <option>07</option>
+                                        <option>08</option>
+                                        <option>09</option>
+                                        <option>10</option>
+                                        <option>11</option>
+                                        <option>12</option>
+                                        <option>13</option>
+                                        <option>14</option>
+                                        <option>15</option>
+                                        <option>16</option>
+                                        <option>17</option>
+                                        <option>18</option>
+                                        <option>19</option>
+                                        <option>20</option>
+                                        <option>21</option>
+                                        <option>22</option>
+                                        <option>23</option>
+                                        <option>24</option>
+                                        <option>25</option>
+                                        <option>26</option>
+                                        <option>27</option>
+                                        <option>28</option>
+                                        <option>29</option>
+                                        <option>30</option>
+                                        <option>31</option>
+                                        <option>32</option>
+                                        <option>33</option>
+                                        <option>34</option>
+                                        <option>35</option>
+                                        <option>36</option>
+                                        <option>37</option>
+                                        <option>38</option>
+                                        <option>39</option>
+                                        <option>40</option>
+                                        <option>41</option>
+                                        <option>42</option>
+                                        <option>43</option>
+                                        <option>44</option>
+                                        <option>45</option>
+                                        <option>46</option>
+                                        <option>47</option>
+                                        <option>48</option>
+                                        <option>49</option>
+                                        <option>50</option>
+                                        <option>51</option>
+                                        <option>52</option>
+                                        <option>53</option>
+                                        <option>54</option>
+                                        <option>55</option>
+                                        <option>56</option>
+                                        <option>57</option>
+                                        <option>58</option>
+                                        <option>59</option>
+                                    </select>
+                                    <div class="icon is-left">
+                                        <i class="far fa-clock"></i>
+                                    </div>
+                                </div>
+                                <!-- PM/AM -->
+                                <div class="select is-success">
+                                    <select id="period">
+                                        <option selected disabled>Period</option>
+                                        <option>AM</option>
+                                        <option>PM</option>
+                                    </select>
+                                    <div class="icon is-left">
+                                        <i class="fas fa-moon"></i>
+                                    </div>
+                                </div>
+                                <!-- Create button -->
+                                <div class="create-btn">
+                                    <button class="button create-button is-info is-rounded is-large">Create</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- Container for JS invalid user value message -->
+                <div id="cal-msg"></div>
+            </article>
+        </section>
+
+        <!-- Event Info -->
+        <!-- HIDE -->
+        <section id="copy-new" class="section hide">
+            <!-- Contain JS created QR code and event details -->
+            <div class="column">
+                <div class="columns is-centered qrColumn has-text-centered"></div>
             </div>
-            <div id="cal-msg"></div>
-        </article>
-    </section>
-
-    <!-- event info -->
-    <!-- HIDE -->
-    <section id="copy-new" class="section hide">
-        <div class="column">
-            <div class="columns is-centered qrColumn has-text-centered"></div>
-        </div>
-        <!-- event button -->
-        <div class="event-btn">
-            <button id="" class="button event-button is-info is-rounded is-large">New Event</button>
-        </div>
-    </section>
-
+            <!-- New event button -->
+            <div class="event-btn">
+                <button id="" class="button event-button is-info is-rounded is-large">New Event</button>
+            </div>
+        </section> 
+    </main>
     <footer class="footer">
         <div class="content has-text-centered">
             <p>
