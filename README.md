@@ -24,7 +24,6 @@ I have a search bar to find my favorite games
 When I find my favorite game,
 
    * I see relevant information about it
-    I can save a list of favorite games
 
 When I want to make a play session
 
