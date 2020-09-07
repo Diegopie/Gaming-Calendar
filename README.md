@@ -1,18 +1,18 @@
-# Gaming-Calendar
+# QR-aid Codes
 
 ## Project Description 
 
-For clan/group leaders to organize their play sessions.
+For clan/group leaders to organize their play sessions
 
-Allows them to plan and send invites across different time zones.
+Allows them to plan and send invites across different time zones
 
     Invite includes:
        - Game information
        - Time of play session
        - Store information
-       - Other relevant information. 
+       - Other relevant information 
 
-Users can easily send all this information to their friend's preferred calendar application.
+Users can easily send all this information to their friend's preferred calendar application
 
 
 ## User Story 
@@ -23,7 +23,7 @@ I have a search bar to find my favorite games
 
 When I find my favorite game,
 
-   * I see relevant information about it.
+   * I see relevant information about it
     I can save a list of favorite games
 
 When I want to make a play session
@@ -32,24 +32,24 @@ When I want to make a play session
 
 Once I've created a session, 
 
-   * I can view my future sessions when visiting the site again. 
+   * I can view my future sessions when visiting the site again
 -----
 
-![Application landing page]()
+![Application landing page](assets\image\readmeSS.JPG)
 
-Link to the live site: [Gaming calendar](https://diegopie.github.io/Gaming-Calendar/)
+Link to the live site: [QR-aid Codes](https://diegopie.github.io/Gaming-Calendar/)
 
 -----
    
 ### Teams
 Team leader: Diego Hernandez
 
-Team Capsule Corp. HTML/CSS: Anastaisha, Jordan Kirby
+Team Capsule Corp. HTML/CSS: [Anastaisha Volosevych](https://github.com/volosevych), [Jordan Kirby](https://github.com/Feizhi255)
 
-Team Planet Nameik JavaScript/API: Diego Hernandez, Seth Martineau.
+Team Planet Namek JavaScript/API: [Diego Hernandez](https://github.com/Diegopie), [Seth Martineau](https://github.com/slothings)
 
 ### Credits
-Made by Anastaisha, Diego Hernandez, Seth Martineau, and Jordan Kirby
+Made by [Anastaisha Volosevych](https://github.com/volosevych), [Diego Hernandez](https://github.com/Diegopie), [Seth Martineau](https://github.com/slothings), and [Jordan Kirby](https://github.com/Feizhi255)
 
 
-Special thanks to: [qrickit.com](https://qrickit.com/qrickit_apps/qrickit_api.php) , [rawg.io](https://rawg.io/apidocs) for are API's and for [Bulma](https://bulma.io/) for the CSS framework.
+Special thanks to: [qrickit.com](https://qrickit.com/qrickit_apps/qrickit_api.php) , [rawg.io](https://rawg.io/apidocs) for are API's and for [Bulma](https://bulma.io/) for the CSS framework
