@@ -52,4 +52,4 @@ Team Planet Namek JavaScript/API: [Diego Hernandez](https://github.com/Diegopie)
 Made by [Anastaisha Volosevych](https://github.com/volosevych), [Diego Hernandez](https://github.com/Diegopie), [Seth Martineau](https://github.com/slothings), and [Jordan Kirby](https://github.com/Feizhi255)
 
 
-Special thanks to: [qrickit.com](https://qrickit.com/qrickit_apps/qrickit_api.php) , [rawg.io](https://rawg.io/apidocs) for are API's and for [Bulma](https://bulma.io/) for the CSS framework
+Special thanks to: [qrickit.com](https://qrickit.com/qrickit_apps/qrickit_api.php) , [rawg.io](https://rawg.io/apidocs) for our API's and for [Bulma](https://bulma.io/) for the CSS framework
