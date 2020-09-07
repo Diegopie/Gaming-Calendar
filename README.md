@@ -30,12 +30,9 @@ When I want to make a play session
 
    * I can easily set a data, time, and description of what we're playing and send that to my friends
 
-Once I've created a session, 
-
-   * I can view my future sessions when visiting the site again
 -----
 
-![Application landing page](assets\image\readmeSS.JPG)
+![Application landing page](./assets/image/readme-demo.gif)
 
 Link to the live site: [QR-aid Codes](https://diegopie.github.io/Gaming-Calendar/)
 
