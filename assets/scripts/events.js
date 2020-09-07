@@ -64,7 +64,7 @@
     function renderGame() {
 
         // Variables to create HTML elements and store parsed gameData values
-        let title = $('<h2>').text(gameData.title).addClass("title is-4 is-size-1");
+        let title = $('.game-titleEl').text(gameData.title);
         let img = $('<img>').attr('src', gameData.image).attr('alt', gameData.title);
         let platString = "";
         let storeString = "";
