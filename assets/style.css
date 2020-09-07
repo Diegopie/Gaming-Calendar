@@ -120,11 +120,11 @@
         }
     }
 
-    .border {
+    .background {
         background-color: silver;
     }
 
     .card-content {
-        background-color: silver;
+        background-color: rgb(138, 12, 12);
     }
 }
