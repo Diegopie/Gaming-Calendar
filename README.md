@@ -33,7 +33,7 @@ When I want to make a play session
 
 ![Application landing page](./assets/image/readme-demo.gif)
 
-Link to the live site: [QR-aid Codes](https://diegopie.github.io/Gaming-Calendar/)
+Link to the live site: [QR-aid Codes](https://diegopie.github.io/QR-aid-Codes/)
 
 -----
    
